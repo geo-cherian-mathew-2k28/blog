@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geo Cherian Mathew | My Blog</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0d1321;
+      padding: 20px 0;
+      color: white;
+    }
+
+    nav {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00c2cb;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #00c2cb, #005f73);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section.light {
+      background-color: #fff;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #005f73;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .project:hover {
+      transform: scale(1.02);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      resize: none;
+    }
+
+    button {
+      background: #00c2cb;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background: #009ba0;
+    }
+
+    footer {
+      background: #0d1321;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.9rem;
+    }
+  </style>
+  <script defer>
+    document.querySelector('form')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thanks for reaching out! 🚀');
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">Geo's Blog</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Hey there! I'm Geo Cherian Mathew 👋</h2>
+      <p>A passionate creator, innovator, and tech enthusiast. Welcome to my personal blog! 🚀</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>🚧 Projects I’ve Worked On</h2>
+    <div class="project-grid">
+      <div class="project">
+        <h3>Camark</h3>
+        <p>An AI-based face-recognition attendance app for institutions.</p>
+      </div>
+      <div class="project">
+        <h3>Blucon</h3>
+        <p>A Bluetooth communication device built for helmet users.</p>
+      </div>
+      <div class="project">
+        <h3>Robowear</h3>
+        <p>Wearable robotic system to help physically disabled individuals walk.</p>
+      </div>
+      <div class="project">
+        <h3>BusRoot</h3>
+        <p>A real-time bus route announcement system using OCR & TTS in Malayalam.</p>
+      </div>
+      <div class="project">
+        <h3>VR Cinema Experience</h3>
+        <p>Immersive 360° virtual reality cinema with ambient theatre effects.</p>
+      </div>
+      <div class="project">
+        <h3>AgroConnect</h3>
+        <p>An agri app that helps farmers via calls & smart analytics.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section light">
+    <h2>👨‍💻 About Me</h2>
+    <p>
+      I'm a Computer Science student deeply interested in building practical tech solutions for real-world problems.
+      I believe that innovation should be accessible, affordable, and impactful. I love collaborating, designing, and creating tech that matters.
+    </p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>📫 Get In Touch</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Geo Cherian Mathew. All rights reserved.</p>
+  </footer>
+</body>
+</html>
